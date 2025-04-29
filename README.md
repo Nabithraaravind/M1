@@ -10,23 +10,24 @@ Write a C program to read 3 characters one by one and print the characters in a 
 4.	End the program.
 
 ## PROGRAM:
+```
+ #include <stdio.h>
+ int main()
+ {
+ char ch1, ch2, ch3;
+ scanf(" %c", &ch1);
+ printf("Enter first character: %c\n",ch1);
+ scanf(" %c", &ch2);
+ printf("Enter second character: %c\n",ch2);
+ scanf(" %c", &ch3);
+ printf("Enter third character: %c\n",ch3);
+ printf("Characters in reverse order: %c %c %c\n", ch3, ch2, ch1);
+ return 0;
+ }
+```
 
 ## OUTPUT:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/bd972023-813c-4518-891b-964a066a1ec9)
 
 
 ## RESULT:
@@ -46,24 +47,30 @@ Write a C program to read A values and check whether A is positive number or not
 6.End the program.
 
 # PROGRAM:
-
+```
+ #include <stdio.h>
+ int main(){
+ int n;
+ scanf("%d", &n);
+ printf("Enter a value: %d\n",n);
+ if (n > 0)
+ {
+ printf("%d is a positive number.\n", n);
+ }
+ else
+ {
+ printf("%d is not a positive number.\n", n);
+ }
+ return 0;
+ }
+```
 # OUTPUT:
 
-
-
-
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/b58dd806-411d-4408-81e5-4727deaa2eda)
+![image](https://github.com/user-attachments/assets/53222026-a124-4248-9d22-dc82cedb73ce)
 
 # RESULT:
 Thus the program to read A values and check whether A is positive number or not has been executed successfully.
- 
- 
- 
 
 
 # EX-03- Operators-Expressions
@@ -80,21 +87,32 @@ Write a program to find minimum between two fraction numbers using conditional o
 7.	Print the minimum value.
 
 ## PROGRAM:
+```
+ #include <stdio.h>
+ int main()
+ {
+ int num1, den1, num2, den2;
+ float frac1, frac2, min;
+ scanf("%d%d", &num1, &den1);
+ printf("Enter numerator and denominator of fraction 1: %d %d\n",num1,den1);
+ scanf("%d%d", &num2, &den2);
+ printf("Enter numerator and denominator of fraction 2: %d %d\n",num2,den2);
+ frac1 = (float)num1 / den1;
+ frac2 = (float)num2 / den2;
+ min = (frac1 < frac2) ? frac1 : frac2;
+ printf("Minimum value between the two fractions is: %.2f\n", min);
+ return 0;
+ }
+```
 
 ## OUTPUT:
 
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/397b6349-4cbd-4aef-88fa-e07123a15ece)
+![image](https://github.com/user-attachments/assets/9b76d524-3705-4b0f-a246-1688660634be)
 
 
 ## RESULT:
 Thus the program to find minimum between two fraction numbers using conditional operator or ternary operator has been executed successfully.
-
-
 
 
 # EX-04- Using Conditional Statements
@@ -111,18 +129,28 @@ Write a C program to check whether the input value is equal to 1 using simple if
 6.	End the program.
 
 ## PROGRAM:
+```
+ #include <stdio.h>
+ int main()
+ {
+ int value;
+ scanf("%d", &value);
+ printf("Enter a value: %d\n",value);
+ if (value == 1)
+ {
+ printf("The input value is equal to 1.\n");
+ } else {
+ printf("The input value is not equal to 1.\n");
+ }
+ return 0;
+ }
+```
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/142fab4a-3d6b-455e-9a1a-273b3c0f9d7a)
+![image](https://github.com/user-attachments/assets/d400c0c1-dc3c-44c0-9dd5-39acaa6ff7da)
 
-
-
-
-
-
-
-
-	
 
 ## RESULT:
 Thus the program to check whether the input value is equal to 1 using simple if statement has been executed successfully
@@ -147,8 +175,44 @@ c.	Else if percentage >= 36: Print “Division = Pass”
 9.	Else: Print “Division = Fail”
 10.	End
 ## PROGRAM:
-
+```
+ #include <stdio.h>
+ int main()
+ {
+ int p, m, c;
+ float tot, per;
+ scanf("%d%d%d", &p, &m, &c);
+ printf("Enter marks of three subjects: %d %d %d\n",p,m,c);
+ tot = p + m + c;
+ per = tot / 3;
+ printf("Total Marks = %.2f\n", tot);
+ printf("Percentage = %.2f\n", per);
+ if (p >= 40 && m >= 40 && c >= 40)
+ {
+ if (per >= 60)
+ {
+ printf("Division = First\n");
+ }
+ else if (per >= 48)
+ {
+ printf("Division = Second\n");
+ }
+ else if (per >= 36)
+ {
+ printf("Division = Pass\n");
+ }
+ }
+ else
+ {
+ printf("Division = Fail\n");
+ }
+ return 0;
+ }
+```
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/35a439ea-68ab-4402-ab4b-099b3d2daad0)
+![image](https://github.com/user-attachments/assets/e0fb0dda-2e87-4880-8012-6d85889ceee6)
+
 
 ## RESULT:
 The program successfully takes three subject marks, calculates the total and percentage, and correctly determines the division based on predefined grading logic.
