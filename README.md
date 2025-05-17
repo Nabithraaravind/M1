@@ -217,3 +217,5 @@ c.	Else if percentage >= 36: Print “Division = Pass”
 ## RESULT:
 The program successfully takes three subject marks, calculates the total and percentage, and correctly determines the division based on predefined grading logic.
 
+# Name: A.Nabithra
+# Register Number: 212224230172
